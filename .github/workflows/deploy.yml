@@ -33,7 +33,9 @@ jobs:
         run: npm ci --include=dev
 
       - name: Build website
-        run: node ./node_modules/vite/bin/vite.js build
+        run: npm run build
+        env:
+          GITHUB_PAGES: 'true'
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
