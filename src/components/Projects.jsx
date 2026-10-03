@@ -4,7 +4,7 @@ import { projects } from "../data/projects";
 export default function Projects() {
   return (
     <section className="section" id="projects">
-      <SectionHeader number="01" label="SELECTED PROJECTS" title="Work built around real problems." />
+      <SectionHeader number="02" label="SELECTED PROJECTS" title="Work built around real problems." />
 
       <div className="project-list">
         {projects.map((project) => (

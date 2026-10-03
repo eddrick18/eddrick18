@@ -4,7 +4,7 @@ import { stackGroups } from "../data/stack";
 export default function Stack() {
   return (
     <section className="section" id="stack">
-      <SectionHeader number="03" label="TECHNICAL STACK" title="Tools I use to turn requirements into working software." />
+      <SectionHeader number="04" label="TECHNICAL STACK" title="Tools I use to turn requirements into working software." />
 
       <div className="stack-table reveal">
         {stackGroups.map((group) => (

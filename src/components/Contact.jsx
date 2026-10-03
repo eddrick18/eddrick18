@@ -20,7 +20,7 @@ export default function Contact() {
     <section className="contact section" id="contact">
       <div className="contact-heading reveal">
         <div className="section-index">
-          <span>05</span>
+          <span>06</span>
           <span>—</span>
           <span>CONTACT</span>
         </div>

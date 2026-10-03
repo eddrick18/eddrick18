@@ -4,7 +4,7 @@ import { experience } from "../data/experience";
 export default function Experience() {
   return (
     <section className="section" id="experience">
-      <SectionHeader number="02" label="EXPERIENCE" title="Learning by shipping and testing." />
+      <SectionHeader number="03" label="EXPERIENCE" title="Learning by shipping and testing." />
 
       <div className="timeline">
         {experience.map((item) => (

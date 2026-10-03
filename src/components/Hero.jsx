@@ -48,7 +48,7 @@ export default function Hero() {
 
             <a
               className="button"
-              href={`${import.meta.env.BASE_URL}Eddrick_Miano_Resume_2026.pdf?v=20260802`}
+              href={`${import.meta.env.BASE_URL}Eddrick_Miano_Resume_2026.pdf?v=25ccadc27551`}
               target="_blank"
               rel="noreferrer"
             >

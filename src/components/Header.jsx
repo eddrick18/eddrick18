@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 
-const navItems = ["projects", "experience", "stack", "about", "contact"];
+const navItems = ["offer", "projects", "experience", "stack", "about", "contact"];
 const profilePhoto = `${import.meta.env.BASE_URL}profile-photo.jpg`;
 
 export default function Header() {
   const [open, setOpen] = useState(false);
-  const [active, setActive] = useState("projects");
+  const [active, setActive] = useState("offer");
 
   useEffect(() => {
     const sections = navItems
@@ -68,13 +68,13 @@ export default function Header() {
             href={`#${item}`}
             onClick={closeMenu}
           >
-            {item}
+            {item === "offer" ? "services" : item}
           </a>
         ))}
 
         <a
           className="nav-resume"
-          href={`${import.meta.env.BASE_URL}Eddrick_Miano_Resume_2026.pdf?v=20260802`}
+          href={`${import.meta.env.BASE_URL}Eddrick_Miano_Resume_2026.pdf?v=25ccadc27551`}
           target="_blank"
           rel="noreferrer"
           onClick={closeMenu}

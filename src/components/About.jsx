@@ -3,7 +3,7 @@ import SectionHeader from "./SectionHeader";
 export default function About() {
   return (
     <section className="section about" id="about">
-      <SectionHeader number="04" label="ABOUT" title="Engineering discipline, user-focused execution." />
+      <SectionHeader number="05" label="ABOUT" title="Engineering discipline, user-focused execution." />
 
       <div className="about-grid reveal">
         <div className="about-lead">

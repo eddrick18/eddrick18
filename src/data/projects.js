@@ -1,6 +1,27 @@
 export const projects = [
   {
     number: "01",
+    title: "QueueWise",
+    category: "FULL-STACK / APPOINTMENTS / QUEUE MANAGEMENT",
+    period: "2026",
+    summary:
+      "A full-stack appointment and queue-management system with dedicated portals for customers, staff, and administrators.",
+    contributions: [
+      "Built role-based authentication using Laravel Sanctum.",
+      "Implemented queue management with automatically refreshed status, plus appointment booking, rescheduling, cancellation, and check-in.",
+      "Added service and staff administration, queue history, and automated backend feature tests.",
+    ],
+    stack: ["React", "TypeScript", "Laravel", "PHP", "SQLite", "REST API"],
+    links: [
+      {
+        label: "View source on GitHub",
+        url: "https://github.com/eddrick18/queuewise",
+      },
+    ],
+    featured: true,
+  },
+  {
+    number: "02",
     title: "Smart Stethoscope System",
     category: "AI / MACHINE LEARNING / FRONTEND / HARDWARE",
     period: "2025–2026",
@@ -17,7 +38,7 @@ export const projects = [
     featured: true,
   },
   {
-    number: "02",
+    number: "03",
     title: "PAPI Mobile Finance App",
     category: "REACT NATIVE / EXPO / MOBILE DEVELOPMENT",
     period: "2025",
@@ -37,7 +58,7 @@ export const projects = [
     ],
   },
   {
-    number: "03",
+    number: "04",
     title: "Weather Application",
     category: "WEB / REST API / RESPONSIVE UI",
     period: "2025",
@@ -51,7 +72,7 @@ export const projects = [
     links: [],
   },
   {
-    number: "04",
+    number: "05",
     title: "Episode Logger",
     category: "CHROME EXTENSION / LOCAL STORAGE",
     period: "2025",
@@ -65,7 +86,7 @@ export const projects = [
     links: [],
   },
   {
-    number: "05",
+    number: "06",
     title: "HealthTap",
     category: "UI/UX / HEALTHCARE / FIGMA",
     period: "2025",
