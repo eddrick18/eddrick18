@@ -9,7 +9,7 @@ export const stackGroups = [
   },
   {
     label: "Backend & APIs",
-    items: ["Laravel", "REST API Integration"],
+    items: ["Node.js", "Laravel", "REST API Integration"],
   },
   {
     label: "AI & Automation",
