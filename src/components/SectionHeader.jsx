@@ -1,6 +1,9 @@
 export default function SectionHeader({ number, label, title }) {
   return (
     <div className="section-heading reveal">
+      <span className="section-watermark" aria-hidden="true">
+        {label}
+      </span>
       <div className="section-index">
         <span>{number}</span>
         <span>—</span>

@@ -1,0 +1,6 @@
+/* Color belongs to the device stage; the page retains its black canvas. */
+.featured-project { --project-field:#0b1919; }
+.featured-project:nth-child(2) { --project-field:#0e1523; }
+.featured-project:nth-child(3) { --project-field:#211d0b; }
+.featured-project:nth-child(4) { --project-field:#0a1c1b; }
+.featured-project .device-stage { background:var(--project-field); }

@@ -1,0 +1,62 @@
+/* A short perimeter glint introduces the actual work without covering its UI. */
+.preview-open {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+.preview-open::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid transparent;
+  pointer-events: none;
+  opacity: 0;
+  background: linear-gradient(
+      115deg,
+      transparent 25%,
+      var(--accent) 48%,
+      transparent 70%
+    )
+    border-box;
+  mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  padding: 1px;
+  background-size: 300% 100%;
+}
+.featured-project.visible .preview-open::after {
+  animation: project-border-light 3.8s ease-out 300ms both;
+}
+.preview-open:focus-visible::after {
+  animation: none;
+  opacity: 0;
+}
+@keyframes project-border-light {
+  0% {
+    background-position: 100% 0;
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    background-position: 0% 0;
+    opacity: 0;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  .preview-open:hover {
+    border-color: var(--accent);
+    box-shadow: 0 0 32px -18px var(--accent);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .featured-project.visible .preview-open::after {
+    animation: none;
+    opacity: 0;
+  }
+}

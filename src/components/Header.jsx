@@ -1,11 +1,18 @@
 import { useEffect, useState } from "react";
 
-const navItems = ["offer", "projects", "experience", "stack", "about", "contact"];
-const profilePhoto = `${import.meta.env.BASE_URL}profile-photo.jpg`;
+const navItems = [
+  "projects",
+  "offer",
+  "experience",
+  "stack",
+  "about",
+  "contact",
+];
+const profilePhoto = `${import.meta.env.BASE_URL}profile-photo-transparent.png`;
 
 export default function Header() {
   const [open, setOpen] = useState(false);
-  const [active, setActive] = useState("offer");
+  const [active, setActive] = useState("projects");
 
   useEffect(() => {
     const sections = navItems
@@ -23,8 +30,8 @@ export default function Header() {
         }
       },
       {
-        rootMargin: "-25% 0px -60%",
-        threshold: [0.1, 0.35, 0.6],
+        rootMargin: "-80px 0px -65% 0px",
+        threshold: 0,
       },
     );
 
@@ -57,10 +64,7 @@ export default function Header() {
         {open ? "CLOSE" : "MENU"}
       </button>
 
-      <nav
-        id="primary-navigation"
-        className={open ? "nav nav-open" : "nav"}
-      >
+      <nav id="primary-navigation" className={open ? "nav nav-open" : "nav"}>
         {navItems.map((item) => (
           <a
             key={item}
@@ -79,7 +83,10 @@ export default function Header() {
           rel="noreferrer"
           onClick={closeMenu}
         >
-          résumé ↗
+          résumé{" "}
+          <span className="action-arrow arrow-diagonal" aria-hidden="true">
+            ↗
+          </span>
         </a>
       </nav>
     </header>

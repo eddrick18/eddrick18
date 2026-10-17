@@ -1,0 +1,177 @@
+.model-workflow {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+.workflow-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+}
+.workflow-heading .showcase-eyebrow {
+  margin: 0 0 10px;
+}
+.workflow-heading h3 {
+  margin: 0;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+}
+.workflow-mode {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.workflow-mode .showcase-button {
+  font-size: 0.7rem;
+}
+.workflow-mode .showcase-button[aria-pressed="true"] {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+}
+.workflow-intro {
+  max-width: 740px;
+  color: var(--muted);
+  line-height: 1.8;
+  font-size: 0.9rem;
+  margin: 24px 0;
+}
+.workflow-lanes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 24px;
+}
+.workflow-lane {
+  min-width: 0;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  padding: 24px;
+}
+.workflow-lane-header {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 20px;
+  margin-bottom: 24px;
+}
+.workflow-lane-header .showcase-eyebrow {
+  color: var(--accent);
+  margin: 0 0 10px;
+}
+.workflow-lane-header h4 {
+  margin: 0 0 16px;
+  font-size: 1.45rem;
+  letter-spacing: -0.035em;
+  font-weight: 500;
+}
+.workflow-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.workflow-facts span {
+  border: 1px solid var(--border);
+  padding: 6px 9px;
+  font:
+    0.65rem/1.5 "DM Mono",
+    monospace;
+  color: var(--muted);
+}
+.workflow-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.workflow-step {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  gap: 14px;
+  position: relative;
+  padding-bottom: 32px;
+}
+.workflow-step:last-child {
+  padding-bottom: 0;
+}
+.workflow-step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  bottom: 3px;
+  left: 14px;
+  width: 1px;
+  background: var(--border);
+}
+.workflow-step:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 11px;
+  width: 5px;
+  height: 5px;
+  border-right: 1px solid var(--muted);
+  border-bottom: 1px solid var(--muted);
+  transform: rotate(45deg);
+}
+.workflow-step-number {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--border);
+  color: var(--accent);
+  font:
+    0.65rem "DM Mono",
+    monospace;
+  background: var(--bg);
+}
+.workflow-step h5 {
+  margin: 4px 0 9px;
+  font-size: 0.94rem;
+  font-weight: 500;
+  line-height: 1.45;
+}
+.workflow-step p {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.workflow-step code {
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  margin-top: 12px;
+  color: var(--accent);
+  font:
+    0.7rem/1.6 "DM Mono",
+    monospace;
+}
+.workflow-source {
+  margin: 24px 0 0;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+  font-size: 0.7rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+@media (max-width: 700px) {
+  .workflow-lanes {
+    grid-template-columns: 1fr;
+  }
+  .workflow-lane {
+    padding: 18px;
+  }
+  .workflow-mode .showcase-button {
+    padding: 10px 12px;
+  }
+}
+@media (forced-colors: active) {
+  .workflow-step:not(:last-child)::after {
+    background: CanvasText;
+  }
+}
+
+.workflow-mode .showcase-button[aria-pressed="true"]:hover:not(:disabled) { background: var(--accent); color: var(--bg); }

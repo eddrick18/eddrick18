@@ -1,0 +1,30 @@
+.experience-list { border-top:1px solid var(--border); }
+.experience-entry { display:grid; grid-template-columns:88px minmax(0,1fr); gap:24px; padding:36px 0; border-bottom:1px solid var(--border); }
+.experience-mark { display:flex; align-items:flex-start; justify-content:center; width:88px; min-height:64px; padding-top:3px; }
+.experience-mark img { display:block; max-width:100%; object-fit:contain; height:64px; }
+.experience-mark-company { align-items:center; }
+.experience-body { min-width:0; max-width:960px; }
+.experience-body h3 { margin:0 0 4px; font-size:clamp(1.15rem,2vw,1.5rem); line-height:1.4; font-weight:600; letter-spacing:-.02em; }
+.experience-employer { margin:0 0 4px; font-size:1rem; line-height:1.6; }
+.experience-date,.experience-location { margin:0 0 2px; color:var(--muted); font-size:.9rem; line-height:1.6; }
+.experience-description { margin:18px 0 24px; font-size:1rem; line-height:1.75; }
+.experience-contributions { padding-left:19px; margin:0; font-size:.95rem; line-height:1.75; color:var(--muted); }
+.experience-contributions li { padding:2px 0; }
+.experience-contributions li::marker { color:var(--accent); }
+.experience-project-link { display:inline-flex; align-items:center; gap:10px; min-height:44px; margin-top:16px; font:.72rem "DM Mono",monospace; color:var(--accent); }
+.experience-mark:focus-visible,.experience-project-link:focus-visible { outline:2px solid var(--accent); outline-offset:5px; }
+.featured-project[id] { scroll-margin-top:100px; }
+@media(max-width:600px) { .experience-entry { grid-template-columns:56px minmax(0,1fr); gap:16px; padding:28px 0; } .experience-mark { width:56px; min-height:56px; } .experience-mark img { width:56px; height:56px; } .experience-description,.experience-contributions { font-size:.9rem; } }
+
+.experience-mark { align-self:start; }
+
+/* Display the symbol portion of the original wordmark without changing the asset. */
+.experience-mark-company { display:block; width:64px; height:64px; min-height:0; overflow:hidden; padding:0; margin-inline:auto; }
+.experience-mark-company img { width:224px; max-width:none; height:64px; object-fit:contain; object-position:left center; }
+@media(max-width:600px) { .experience-mark-company { width:56px; height:56px; } .experience-mark-company img { width:196px; height:56px; } }
+
+.experience-mark-company img { margin-left:-14px; }
+@media(max-width:600px) { .experience-mark-company img { margin-left:-12px; } }
+
+/* Keep the standalone symbol visible while excluding the adjacent lettering. */
+.experience-mark-company img { clip-path:polygon(0 0,36% 0,36% 22%,31.5% 22%,31.5% 100%,0 100%); }

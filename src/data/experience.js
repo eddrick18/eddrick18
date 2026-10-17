@@ -1,16 +1,36 @@
 export const experience = [
   {
-    period: "JUN 2025 — AUG 2025",
-    role: "Software Development Intern",
-    organization: "Bluebeans System Inc.",
-    description:
-      "Developed frontend features for a mobile application using React Native and Expo. Collaborated with the development team on feature implementation and testing, and assisted with frontend and backend tasks, debugging, and system validation.",
+    period: "Apr 2025 – Mar 2026 · 1 yr",
+    role: "Thesis Project Leader & AI/ML Developer",
+    organization: "Silliman University",
+    location: "Dumaguete, Central Visayas, Philippines",
+    logo: "silliman-university.png",
+    logoKind: "university",
+    website: "https://su.edu.ph",
+    description: "Led a Computer Engineering thesis team in developing an AI-enabled Smart Stethoscope prototype for detecting heart and lung sound abnormalities.",
+    highlights: [
+      "Trained and evaluated two separate models using Python and TensorFlow: a LeNet-style heart CNN and a four-class lung CNN.",
+      "Worked on dataset preparation, model testing, debugging, and system integration.",
+      "Developed frontend displays for model results and visualizations.",
+      "Assigned team responsibilities, tracked milestones, and helped lead the team through a successful thesis defense.",
+    ],
+    project: "Smart Stethoscope System",
   },
   {
-    period: "AUG 2025 — MAR 2026",
-    role: "Project Leader",
-    organization: "Smart Stethoscope System",
-    description:
-      "Led a team developing an AI-enabled hardware and software system. Managed responsibilities, project milestones, machine-learning work, frontend features, integration, debugging, and end-to-end testing.",
+    period: "May 2025 – Jul 2025 · 3 mos",
+    role: "Software Developer Intern",
+    organization: "Bluebeans Systems Inc. · Internship",
+    location: "Dumaguete, Central Visayas, Philippines · On-site",
+    logo: "bluebeans-systems.png",
+    logoKind: "company",
+    website: "https://www.bluebeanssystems.com",
+    description: "Built the complete mobile application frontend using React Native and Expo, including user login, authentication flows, and integration with backend APIs.",
+    highlights: [
+      "Built the application screens and navigation across the mobile frontend.",
+      "Implemented user login and authentication flows connected to backend APIs.",
+      "Integrated backend APIs to support application features and data flows.",
+      "Debugged frontend and API integration issues and tested application workflows with the development team.",
+    ],
+    project: "PAPI Mobile Finance App",
   },
 ];

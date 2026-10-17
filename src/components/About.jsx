@@ -8,9 +8,9 @@ export default function About() {
       <div className="about-grid reveal">
         <div className="about-lead">
           <p>
-            I am a Computer Engineering graduate from Silliman University focused on
+            I’m a <span className="accent">Computer Engineering graduate</span> from Silliman University focused on
             frontend and application development.
-          </p>
+          </p><dl className="about-facts"><div><dt>BASED IN</dt><dd>Escalante City, Negros Occidental, Philippines</dd></div><div><dt>FOCUS</dt><dd>Frontend &amp; mobile application development</dd></div><div><dt>APPROACH</dt><dd>Understand, build, test, refine.</dd></div></dl>
         </div>
 
         <div className="about-copy">
