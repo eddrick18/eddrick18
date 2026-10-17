@@ -1,4 +1,7 @@
 import { useEffect } from "react";
+import MotionEffects from "./components/MotionEffects";
+import MagneticButtons from "./components/MagneticButtons";
+import ScrollProgress from "./components/ScrollProgress";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Offer from "./components/Offer";
@@ -30,11 +33,14 @@ export default function App() {
 
   return (
     <>
+      <MotionEffects />
+      <MagneticButtons />
       <Header />
+      <ScrollProgress />
       <main>
         <Hero />
-        <Offer />
         <Projects />
+        <Offer />
         <Experience />
         <Stack />
         <About />

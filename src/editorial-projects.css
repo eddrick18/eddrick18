@@ -1,0 +1,32 @@
+/* Project titles form the editorial rhythm; product interfaces stay readable. */
+.featured-project { grid-template-columns:minmax(0,1.45fr) minmax(0,.85fr); grid-template-areas:"heading heading" "visual story"; gap:36px clamp(36px,5vw,76px); padding:76px 0 92px; align-items:start; }
+.project-editorial-heading { grid-area:heading; padding-bottom:8px; }
+.project-editorial-heading .project-topline { display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; color:var(--muted); font:.65rem/1.7 "DM Mono",monospace; }
+.project-editorial-heading h3 { max-width:1000px; margin:24px 0 0; font-size:clamp(2.6rem,6.7vw,6.2rem); font-weight:500; letter-spacing:-.065em; line-height:1.02; text-wrap:balance; }
+.featured-project .project-visual { grid-area:visual; min-width:0; }
+.featured-project .featured-project-copy { grid-area:story; padding-top:20px; }
+.featured-project:nth-child(even) { grid-template-columns:minmax(0,.85fr) minmax(0,1.45fr); grid-template-areas:"heading heading" "story visual"; }
+.featured-project:nth-child(even) .project-editorial-heading h3 { margin-left:auto; text-align:right; }
+.featured-project .preview-open { background:transparent; }
+.featured-project .device-stage { min-height:430px; padding:54px 28px 64px; }
+.featured-project .device-stage-phone { min-height:590px; }
+.featured-project .featured-role { font-size:.74rem; margin-bottom:24px; }
+.featured-project-copy .project-summary { font-size:1.12rem; line-height:1.75; margin-top:0; }
+.featured-project .featured-highlights { font-size:.84rem; margin-top:24px; }
+.featured-project .tag-list { padding-top:20px; border-top:1px solid var(--border); }
+.featured-project .device-caption { font-size:.57rem; letter-spacing:.04em; text-align:center; }
+.featured-project .inline-preview-controls { border-top:0; }
+@media(max-width:900px) {
+  .featured-project,.featured-project:nth-child(even) { grid-template-columns:1fr; grid-template-areas:"heading" "visual" "story"; gap:24px; padding:48px 0 60px; }
+  .featured-project:nth-child(even) .project-editorial-heading h3 { margin-left:0; text-align:left; }
+  .project-editorial-heading h3 { font-size:clamp(2.6rem,8vw,4.5rem); margin-top:18px; }
+  .featured-project .featured-project-copy { padding-top:4px; max-width:650px; }
+  .featured-project .device-stage { min-height:360px; }
+  .featured-project .device-stage-phone { min-height:560px; }
+}
+@media(max-width:480px) {
+  .featured-project .device-stage-laptop { padding:30px 16px 48px; min-height:260px; }
+  .featured-project .device-stage-phone { padding:36px 20px 48px; min-height:530px; }
+  .project-editorial-heading .project-topline { font-size:.58rem; }
+  .featured-project-copy .project-summary { font-size:1rem; }
+}
