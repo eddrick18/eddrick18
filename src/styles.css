@@ -175,7 +175,6 @@ footer {
 .project-topline,
 .section-index,
 .fact-label,
-.timeline-period,
 .kicker {
   font-family: "DM Mono", monospace;
   font-size: 0.73rem;
@@ -377,33 +376,6 @@ h1 {
   font-weight: 500;
 }
 
-.project-list {
-  border-top: 1px solid var(--border);
-}
-
-.project {
-  display: grid;
-  grid-template-columns: 48px minmax(0, 1fr);
-  gap: 24px;
-  padding: 36px 0;
-  border-bottom: 1px solid var(--border);
-  transition: background 200ms ease;
-}
-
-.project:hover {
-  background: rgba(255, 255, 255, 0.018);
-}
-
-.project-number {
-  font-family: "DM Mono", monospace;
-  color: var(--subtle);
-  font-size: 0.8rem;
-}
-
-.project.featured .project-number {
-  color: var(--accent);
-}
-
 .project-topline {
   display: flex;
   flex-wrap: wrap;
@@ -428,14 +400,6 @@ h1 {
   align-items: center;
   min-height: 44px;
   line-height: 1.5;
-}
-
-.project h3 {
-  margin: 22px 0 22px;
-  font-size: clamp(2rem, 4.5vw, 4.4rem);
-  line-height: 1;
-  letter-spacing: -0.055em;
-  font-weight: 500;
 }
 
 .project-summary {
@@ -479,43 +443,6 @@ h1 {
   border: 1px solid var(--border);
   font-family: "DM Mono", monospace;
   font-size: 0.7rem;
-}
-
-.timeline {
-  border-top: 1px solid var(--border);
-}
-
-.timeline-item {
-  display: grid;
-  grid-template-columns: minmax(180px, 0.55fr) minmax(0, 1.45fr);
-  gap: 48px;
-  padding: 48px 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.timeline-period {
-  color: var(--subtle);
-}
-
-.timeline h3 {
-  margin-bottom: 6px;
-  font-size: clamp(1.8rem, 3.5vw, 3.2rem);
-  letter-spacing: -0.045em;
-  font-weight: 500;
-}
-
-.timeline-org {
-  color: var(--accent);
-  font-family: "DM Mono", monospace;
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.timeline-item p:last-child {
-  max-width: 760px;
-  color: var(--muted);
-  line-height: 1.75;
 }
 
 .stack-table {
@@ -725,7 +652,6 @@ footer {
 
   .hero-grid,
   .section-heading,
-  .timeline-item,
   .stack-row,
   .contact-heading,
   .contact-grid {
@@ -769,12 +695,6 @@ footer {
 
   .section-heading {
     margin-bottom: 50px;
-  }
-
-  .project {
-    grid-template-columns: 42px minmax(0, 1fr);
-    gap: 16px;
-    padding: 36px 0;
   }
 
   .project-topline {
@@ -830,14 +750,6 @@ footer {
 
   .button {
     width: 100%;
-  }
-
-  .project {
-    grid-template-columns: 1fr;
-  }
-
-  .project-number {
-    margin-bottom: 0;
   }
 
   .contact-details,

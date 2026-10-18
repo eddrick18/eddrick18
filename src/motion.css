@@ -91,9 +91,6 @@
   transform: none;
   opacity: 1;
 }
-.featured-project .featured-copy {
-  transition-delay: 120ms;
-}
 @media (hover: hover) and (pointer: fine) {
   .preview-open .device-frame {
     transition: transform 260ms ease;

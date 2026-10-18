@@ -1,6 +1,5 @@
 export const projects = [
   {
-    number: "01",
     title: "QueueWise",
     category: "FULL-STACK / APPOINTMENTS / QUEUE MANAGEMENT",
     period: "2026",
@@ -18,10 +17,8 @@ export const projects = [
         url: "https://github.com/eddrick18/queuewise",
       },
     ],
-    featured: true,
   },
   {
-    number: "02",
     title: "Smart Stethoscope System",
     category: "AI / MACHINE LEARNING / FRONTEND / HARDWARE",
     period: "2025–2026",
@@ -41,10 +38,8 @@ export const projects = [
       "Audio Classification",
     ],
     links: [],
-    featured: true,
   },
   {
-    number: "03",
     title: "PAPI Mobile Finance App",
     category: "REACT NATIVE / EXPO / MOBILE DEVELOPMENT",
     period: "2025",
@@ -64,7 +59,6 @@ export const projects = [
     ],
   },
   {
-    number: "04",
     title: "Weather Application",
     category: "WEB / REST API / RESPONSIVE UI",
     period: "2025",
@@ -78,7 +72,6 @@ export const projects = [
     links: [],
   },
   {
-    number: "05",
     title: "Episode Logger",
     category: "CHROME EXTENSION / LOCAL STORAGE",
     period: "2025",
@@ -92,7 +85,6 @@ export const projects = [
     links: [],
   },
   {
-    number: "06",
     title: "HealthTap",
     category: "UI/UX / HEALTHCARE / FIGMA",
     period: "2025",
