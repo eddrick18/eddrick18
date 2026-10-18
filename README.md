@@ -1,4 +1,4 @@
-# Eddrick Portfolio — Final Photo Icon Version
+# Eddrick Portfolio â€” Final Photo Icon Version
 
 This version uses `public/eddrick-face-tab-icon.png` as the browser-tab photo.
 
@@ -51,7 +51,7 @@ The workflow in `.github/workflows/deploy.yml` will build and publish the site.
 Replace this file while keeping the same filename:
 
 ```text
-public/profile-photo.jpg
+public/profile-photo-transparent.png
 ```
 
 ## Add project links
@@ -73,13 +73,20 @@ links: [
 - `src/components/About.jsx`
 - `src/components/Contact.jsx`
 
-The résumé is stored in `public/Eddrick_Miano_Resume_2026.pdf`.
+The rÃ©sumÃ© is stored in `public/Eddrick_Miano_Resume_2026.pdf`.
 
 ## Layout update
 
 The hero portrait now appears before the name, and the caption below the portrait has been removed.
 
 
-## Updated résumé
+## Updated rÃ©sumÃ©
 
-The website résumé links now use `Eddrick_Miano_Resume_2026.pdf`. A version query is included to prevent an older cached PDF from appearing.
+The website rÃ©sumÃ© links now use `Eddrick_Miano_Resume_2026.pdf`. A version query is included to prevent an older cached PDF from appearing.
+
+
+## Source optimization
+
+Project galleries and technical breakdowns load on demand. Journal animations use Motion’s domAnimation features; photo stacks mount only their three visible cards. Removed legacy project/timeline CSS and unused project metadata. Keep original photo assets and icon licenses.
+
+Verified production bundle: initial JavaScript 306.97 kB (101.40 kB gzip), versus 365.66 kB (118.22 kB gzip) before cleanup. Initial CSS 48.04 kB versus 54.50 kB; workflow CSS loads with the corresponding project. These are build sizes, not measured page-load timings.

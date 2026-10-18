@@ -1,3 +1,4 @@
+import AboutJournal from "./AboutJournal";
 import SectionHeader from "./SectionHeader";
 
 export default function About() {
@@ -32,6 +33,7 @@ export default function About() {
           </div>
         </div>
       </div>
+      <AboutJournal />
     </section>
   );
 }

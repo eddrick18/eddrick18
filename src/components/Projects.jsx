@@ -1,11 +1,12 @@
-import GalleryScreen from "./GalleryScreen";
-import { useEffect, useRef, useState } from "react";
-import ModelWorkflow from "./ModelWorkflow";
-import QueueWiseBreakdown from "./QueueWiseBreakdown";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import SectionHeader from "./SectionHeader";
 import { projects } from "../data/projects";
 import { projectStories } from "../data/projectStories";
 import "../showcase.css";
+
+const GalleryScreen = lazy(() => import("./GalleryScreen"));
+const ModelWorkflow = lazy(() => import("./ModelWorkflow"));
+const QueueWiseBreakdown = lazy(() => import("./QueueWiseBreakdown"));
 
 const asset = (name) => `${import.meta.env.BASE_URL}projects/${name}`;
 
@@ -185,6 +186,7 @@ function ProjectDialog({ selection, onClose }) {
         </button>
       </header>
       <div className="project-dialog-content">
+        <Suspense fallback={<p role="status">Loading project details…</p>}>
         <div className={`gallery-view gallery-view-${story.device}`}>
           {showVideo ? (
             <div className="demo-video-wrap">
@@ -306,6 +308,7 @@ function ProjectDialog({ selection, onClose }) {
           ))}
         </div>
         <ProjectLinks project={project} />
+        </Suspense>
       </div>
     </dialog>
   );

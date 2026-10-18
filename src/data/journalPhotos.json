@@ -1,0 +1,182 @@
+[
+  {
+    "id": "hard-hatting",
+    "file": "hard-hatting.webp",
+    "thumb": "hard-hatting-thumb.webp",
+    "width": 1536,
+    "height": 2048,
+    "caption": "Receiving my hard hat during my third year at Silliman University.",
+    "alt": "Receiving my hard hat during my third year at Silliman University."
+  },
+  {
+    "id": "internship-workspace",
+    "file": "internship-workspace.webp",
+    "thumb": "internship-workspace-thumb.webp",
+    "width": 2048,
+    "height": 1536,
+    "caption": "A day at the Bluebeans Systems workspace during our third-year internship.",
+    "alt": "A day at the Bluebeans Systems workspace during our third-year internship."
+  },
+  {
+    "id": "internship-learning",
+    "file": "internship-learning.webp",
+    "thumb": "internship-learning-thumb.webp",
+    "width": 2048,
+    "height": 1536,
+    "caption": "Learning and working alongside the internship team.",
+    "alt": "Learning and working alongside the internship team."
+  },
+  {
+    "id": "internship-team",
+    "file": "internship-team.webp",
+    "thumb": "internship-team-thumb.webp",
+    "width": 1536,
+    "height": 2048,
+    "caption": "Our shared workspace: coding, collaborating, and learning together.",
+    "alt": "Our shared workspace: coding, collaborating, and learning together."
+  },
+  {
+    "id": "thesis-team-break",
+    "file": "thesis-team-break.webp",
+    "thumb": "thesis-team-break-thumb.webp",
+    "width": 2048,
+    "height": 1536,
+    "caption": "A shared meal with the thesis team between project milestones.",
+    "alt": "A shared meal with the thesis team between project milestones."
+  },
+  {
+    "id": "thesis-team-prototype",
+    "file": "thesis-team-prototype.webp",
+    "thumb": "thesis-team-prototype-thumb.webp",
+    "width": 1536,
+    "height": 2048,
+    "caption": "Our thesis team with the Smart Stethoscope prototype and manuscript.",
+    "alt": "Our thesis team with the Smart Stethoscope prototype and manuscript."
+  },
+  {
+    "id": "thesis-evaluation",
+    "file": "thesis-evaluation.webp",
+    "thumb": "thesis-evaluation-thumb.webp",
+    "width": 1536,
+    "height": 2048,
+    "caption": "Heart-model evaluation during development; this records one experimental run.",
+    "alt": "Heart-model evaluation during development; this records one experimental run."
+  },
+  {
+    "id": "thesis-training",
+    "file": "thesis-training.webp",
+    "thumb": "thesis-training-thumb.webp",
+    "width": 1080,
+    "height": 1920,
+    "caption": "Training and validation logs from model development.",
+    "alt": "Training and validation logs from model development."
+  },
+  {
+    "id": "thesis-assembly",
+    "file": "thesis-assembly.webp",
+    "thumb": "thesis-assembly-thumb.webp",
+    "width": 1536,
+    "height": 2048,
+    "caption": "Hands-on assembly and wiring during prototype development.",
+    "alt": "Hands-on assembly and wiring during prototype development."
+  },
+  {
+    "id": "thesis-hardware",
+    "file": "thesis-hardware.webp",
+    "thumb": "thesis-hardware-thumb.webp",
+    "width": 1536,
+    "height": 2048,
+    "caption": "The embedded hardware and display connections taking shape.",
+    "alt": "The embedded hardware and display connections taking shape."
+  },
+  {
+    "id": "thesis-printing",
+    "file": "thesis-printing.webp",
+    "thumb": "thesis-printing-thumb.webp",
+    "width": 1536,
+    "height": 2048,
+    "caption": "Watching a prototype component take shape on the 3D printer.",
+    "alt": "Watching a prototype component take shape on the 3D printer."
+  },
+  {
+    "id": "thesis-bench",
+    "file": "thesis-bench.webp",
+    "thumb": "thesis-bench-thumb.webp",
+    "width": 2048,
+    "height": 1536,
+    "caption": "An early prototype setup on the workbench.",
+    "alt": "An early prototype setup on the workbench."
+  },
+  {
+    "id": "ring-hop-portrait",
+    "file": "ring-hop-portrait.webp",
+    "thumb": "ring-hop-portrait-thumb.webp",
+    "width": 1536,
+    "height": 2048,
+    "caption": "A Ring Hop moment in our fourth year, before graduation.",
+    "alt": "A Ring Hop moment in our fourth year, before graduation."
+  },
+  {
+    "id": "ring-hop-ring",
+    "file": "ring-hop-ring.webp",
+    "thumb": "ring-hop-ring-thumb.webp",
+    "width": 1536,
+    "height": 2048,
+    "caption": "Marking the occasion at our Ring Hop ceremony.",
+    "alt": "Marking the occasion at our Ring Hop ceremony."
+  },
+  {
+    "id": "ring-hop-class",
+    "file": "ring-hop-class.webp",
+    "thumb": "ring-hop-class-thumb.webp",
+    "width": 1536,
+    "height": 2048,
+    "caption": "With classmates on campus during Ring Hop.",
+    "alt": "With classmates on campus during Ring Hop."
+  },
+  {
+    "id": "ring-hop-friends",
+    "file": "ring-hop-friends.webp",
+    "thumb": "ring-hop-friends-thumb.webp",
+    "width": 2048,
+    "height": 1535,
+    "caption": "Celebrating the milestone and the friendships built along the way.",
+    "alt": "Celebrating the milestone and the friendships built along the way."
+  },
+  {
+    "id": "ring-hop-ceremony",
+    "file": "ring-hop-ceremony.webp",
+    "thumb": "ring-hop-ceremony-thumb.webp",
+    "width": 2048,
+    "height": 1150,
+    "caption": "A keepsake from the Ring Hop ceremony. Photo credit is retained in the image.",
+    "alt": "A keepsake from the Ring Hop ceremony. Photo credit is retained in the image."
+  },
+  {
+    "id": "graduation-mirror",
+    "file": "graduation-mirror.webp",
+    "thumb": "graduation-mirror-thumb.webp",
+    "width": 1536,
+    "height": 2048,
+    "caption": "Getting ready for graduation day at Silliman University.",
+    "alt": "Getting ready for graduation day at Silliman University."
+  },
+  {
+    "id": "graduation-class",
+    "file": "graduation-class.webp",
+    "thumb": "graduation-class-thumb.webp",
+    "width": 2048,
+    "height": 1535,
+    "caption": "Celebrating graduation with classmates at Silliman University.",
+    "alt": "Celebrating graduation with classmates at Silliman University."
+  },
+  {
+    "id": "graduation-portrait",
+    "file": "graduation-portrait.webp",
+    "thumb": "graduation-portrait-thumb.webp",
+    "width": 1536,
+    "height": 2048,
+    "caption": "Graduation day: closing my chapter at Silliman as a student.",
+    "alt": "Graduation day: closing my chapter at Silliman as a student."
+  }
+]

@@ -1,0 +1,16 @@
+.journal-stacked-album { grid-column:1 / -1; margin:0; min-width:0; }
+.journal-stack-button { display:block; width:100%; padding:0; background:transparent; border:0; color:var(--text); cursor:pointer; text-align:left; }
+.journal-stack-stage { display:block; position:relative; aspect-ratio:4/3; margin:12px 8px 16px 0; }
+.journal-stack-layer { display:block; position:absolute; width:82%; height:82%; left:0; bottom:0; border:3px solid var(--bg); background:var(--bg); box-shadow:0 5px 12px #0004; overflow:hidden; }
+.journal-stack-layer img { display:block; width:100%; height:100%; object-fit:cover; }
+.journal-stack-count { position:absolute; background:var(--bg); color:var(--text); border:1px solid var(--border); padding:6px 8px; font:.6rem/1.5 "DM Mono",monospace; }
+.journal-stack-label { display:flex; justify-content:space-between; gap:20px; padding:8px 0 12px; border-bottom:1px solid var(--border); font:.65rem/1.7 "DM Mono",monospace; color:var(--muted); }
+.journal-stack-label > span:last-child { color:var(--accent); }
+.journal-stacked-album figcaption { padding-top:12px; color:var(--muted); font-size:.72rem; line-height:1.7; }
+.journal-stack-button:focus-visible { outline:2px solid var(--accent); outline-offset:6px; }
+@media(max-width:480px) { .journal-stack-layer { border-width:2px; } .journal-stack-count { font-size:.5rem; padding:5px 7px; bottom:6px; right:6px; } .journal-stack-label { gap:8px; font-size:.6rem; } }
+.journal-stack-count { z-index:20; bottom:calc(16px + 8px); right:calc(18% + 8px); pointer-events:none; }
+.journal-stack-stage { isolation:isolate; }
+.journal-stack-open { background:transparent; border:0; padding:10px 0 10px 16px; color:var(--accent); font:inherit; cursor:pointer; min-height:44px; }
+.journal-stack-open:focus-visible { outline:2px solid var(--accent); outline-offset:4px; }
+.journal-stack-label { align-items:center; }
