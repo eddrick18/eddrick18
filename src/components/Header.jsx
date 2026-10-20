@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import VisitorCount from "./VisitorCount";
 
 const navItems = [
   "projects",
@@ -44,15 +45,18 @@ export default function Header() {
 
   return (
     <header className="site-header">
-      <a
-        className="profile-brand"
-        href="#top"
-        onClick={closeMenu}
-        aria-label="Go to the top of Eddrick Miano's portfolio"
-      >
-        <img src={profilePhoto} alt="" />
-        <span className="profile-brand-name">Eddrick Miano</span>
-      </a>
+      <div className="header-identity">
+        <a
+          className="profile-brand"
+          href="#top"
+          onClick={closeMenu}
+          aria-label="Go to the top of Eddrick Miano's portfolio"
+        >
+          <img src={profilePhoto} alt="" />
+          <span className="profile-brand-name">Eddrick Miano</span>
+        </a>
+        <VisitorCount />
+      </div>
 
       <button
         className="menu-button"
