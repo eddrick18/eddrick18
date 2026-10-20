@@ -1,0 +1,4 @@
+.header-identity { display:flex; align-items:center; gap:16px; min-width:0; }
+.visitor-count { display:inline-flex; align-items:center; gap:5px; padding-left:14px; border-left:1px solid var(--border); color:var(--muted); font:.65rem/1.5 "DM Mono",monospace; white-space:nowrap; font-variant-numeric:tabular-nums; }
+.visitor-count svg { flex-shrink:0; }
+@media(max-width:560px) { .header-identity { gap:10px; } .visitor-count { padding-left:10px; font-size:.6rem; } }

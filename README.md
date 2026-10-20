@@ -90,3 +90,6 @@ The website rÃ©sumÃ© links now use `Eddrick_Miano_Resume_2026.pdf`. A versio
 Project galleries and technical breakdowns load on demand. Journal animations use Motion’s domAnimation features; photo stacks mount only their three visible cards. Removed legacy project/timeline CSS and unused project metadata. Keep original photo assets and icon licenses.
 
 Verified production bundle: initial JavaScript 306.97 kB (101.40 kB gzip), versus 365.66 kB (118.22 kB gzip) before cleanup. Initial CSS 48.04 kB versus 54.50 kB; workflow CSS loads with the corresponding project. These are build sizes, not measured page-load timings.
+
+## Visitor counter
+See [VISITOR-COUNTER.md](VISITOR-COUNTER.md) for database setup, owner exclusion, and verification. Run `npm test` for the counter tests.
